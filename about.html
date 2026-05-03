@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında - INNOWARM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header .logo { font-size: 3rem; margin-bottom: 1rem; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        h2 { color: #ea580c; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.5rem; color: #555; }
+        a { color: #ea580c; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .info-card {
+            background: #fff7ed;
+            padding: 1.25rem;
+            border-radius: 12px;
+            border-left: 4px solid #ea580c;
+        }
+        .info-card .label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ea580c;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+        }
+        .info-card .value { font-weight: 600; color: #333; }
+        .footer { text-align: center; padding: 2rem 1rem; color: #999; font-size: 0.9rem; }
+        .back-link { display: inline-block; color: #ea580c; text-decoration: none; margin-bottom: 1rem; font-weight: 500; }
+        .back-link:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.5rem; }
+            .content { padding: 1.5rem; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🌡️</div>
+        <h1>Hakkında</h1>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <a href="index.html" class="back-link">← Ana Sayfa</a>
+
+            <h2>INNOWARM Nedir?</h2>
+            <p>
+                INNOWARM, Tüedes Elektronik tarafından üretilen ESP32 tabanlı akıllı termostat cihazlarınızı telefonunuzdan kontrol etmenizi sağlayan resmi mobil uygulamadır. Evinizdeki ısıtma sistemini kolayca yönetmek, enerji tasarrufu yapmak ve konforunuzu artırmak için tasarlanmıştır.
+            </p>
+
+            <h2>Ne Yapabilirsiniz?</h2>
+            <ul>
+                <li>Birden fazla odanın termostatını tek ekrandan kontrol edin</li>
+                <li>Sıcaklığı hassas şekilde ayarlayın, mod seçin (Konfor, Eko, Boost, Antifriz)</li>
+                <li>Her gün için 4 farklı haftalık zamanlama programı oluşturun</li>
+                <li>Enerji tüketim tahminlerini ve maliyet analizini takip edin</li>
+                <li>Tüm bunları yerel ağınızda, kişisel veri toplanmadan yapın</li>
+            </ul>
+
+            <h2>Vizyonumuz</h2>
+            <p>
+                Konforlu, verimli ve sürdürülebilir bir yaşam alanı oluşturmanıza yardımcı olmak. Akıllı ev teknolojilerini herkes için anlaşılır, kullanımı kolay ve güvenli kılmak.
+            </p>
+
+            <h2>Şirket Bilgileri</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="label">Şirket</div>
+                    <div class="value">Tüedes Elektronik</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Ürün</div>
+                    <div class="value">INNOWARM Mobil</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Sürüm</div>
+                    <div class="value">1.0.0</div>
+                </div>
+                <div class="info-card">
+                    <div class="label">Platform</div>
+                    <div class="value">iOS &amp; Android</div>
+                </div>
+            </div>
+
+            <h2>Teknoloji</h2>
+            <p>
+                INNOWARM, modern web teknolojileri (React, Vite) ve Capacitor framework'ü ile geliştirilmiştir. ESP32 termostat donanımı ile yerel ağ üzerinden HTTP API'leri aracılığıyla iletişim kurar. Tüm kullanıcı verileri telefonunuzun yerel depolamasında tutulur; bulut sunucusunda kişisel veri saklanmaz.
+            </p>
+
+            <h2>İletişim</h2>
+            <p>
+                Sorularınız, geri bildirimleriniz veya iş birliği talepleriniz için bizimle iletişime geçebilirsiniz:
+            </p>
+            <ul>
+                <li>📧 E-posta: <a href="mailto:destek@tuedeselektronik.com">destek@tuedeselektronik.com</a></li>
+                <li>🌐 Web: <a href="https://tuedeselektronik.com">tuedeselektronik.com</a></li>
+                <li>📍 Tüedes Elektronik, Türkiye</li>
+            </ul>
+
+            <h2>Yasal</h2>
+            <ul>
+                <li><a href="privacy.html">Gizlilik Politikası</a></li>
+                <li><a href="terms.html">Kullanım Şartları</a></li>
+                <li><a href="support.html">Destek &amp; SSS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 INNOWARM / Tüedes Elektronik. Tüm hakları saklıdır.</p>
+    </div>
+</body>
+</html>
